@@ -7,7 +7,7 @@ import Challenge from './Challenge';
 const DayView: React.FC = () => {
   const { dayNumber } = useParams<{ dayNumber: string }>();
   const navigate = useNavigate();
-  const { isDayAvailable, completeDay, resetProgress } = useProgress();
+  const { isDayAvailable, completeDay} = useProgress();
   const [showChallenge, setShowChallenge] = useState(false);
   const challengeRef = useRef<HTMLDivElement>(null);
 
